@@ -3,7 +3,8 @@
  * ds-algo-interview-cookbook
  *
  * Print if the given number is prime or not.
- * Created by Ravi Vats on 20/01/20.
+ * 
+ * Created by Ravi Vats on 08/03/20.
 */
 
 #include <iostream>

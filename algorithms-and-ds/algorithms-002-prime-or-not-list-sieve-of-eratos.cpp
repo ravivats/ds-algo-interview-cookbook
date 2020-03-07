@@ -4,7 +4,8 @@
  *
  * Print all prime numbers till number N efficiently using 
  * the Sieve of Eratosthenes method.
- * Created by Ravi Vats on 20/01/20.
+ * 
+ * Created by Ravi Vats on 08/03/20.
 */
 
 #include <cstring>
@@ -20,8 +21,7 @@ void printPrimeNumbers(int N) {
     memset(isPrime, true, sizeof(isPrime));
 
     // 0 and 1 are not primes
-    isPrime[0] = false;
-    isPrime[1] = false;
+    isPrime[0] = isPrime[1] = false;
 
     for (int p = 2; p * p <= N; p++)
         if (isPrime[p] == true)
