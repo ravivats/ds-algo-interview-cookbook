@@ -1,0 +1,10 @@
+# Don't track content of these folders #
+# +-+-+-+-+-+-+-+-+-+-+-+ #
+
+
+# Compiled source #
+# +-+-+-+-+-+-+-+-+-+-+-+ #
+.vscode
+
+# Packages #
+# +-+-+-+-+-+-+-+-+-+-+-+ #
