@@ -10,6 +10,5 @@ The questions are picked up from various coding platforms, books, actual intervi
 
 #### Problems solved for challenges:
 
-- LeetCode: May 2020 LeetCoding challenge: 30 questions, 30 days
+- **LeetCode**: `May 2020 LeetCoding challenge`: 30 questions, 30 days
   - Solutions available in [may-2020-leetcoding-challenge](./platform-problems/leetcode/may-2020-leetcoding-challenge) folder.
-
