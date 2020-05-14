@@ -10,6 +10,8 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 '''
+
+
 class Solution:
     def canConstruct(self, J: str, S: str) -> bool:
         mapdict = {}
@@ -25,7 +27,7 @@ class Solution:
                 mapdict[J[j]] = mapdict[J[j]] - 1
         return True
 
+
 if __name__ == '__main__':
-    Solution s = Solution()
-    Solution.canConstruct("aa", "aab")
-    
+    s = Solution()
+    s.canConstruct("aa", "aab")
