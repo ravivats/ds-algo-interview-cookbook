@@ -21,17 +21,16 @@ class Solution(object):
             numList = list(num)
             numList.sort()
             return numList[0]
-        totalRemoved = 0
-        numClone = num
-        for i in range(len(num) - 1):
-            if num[i] > num[i + 1]:
-                numClone = numClone.replace(num[i], '', 1)
-                totalRemoved += 1
-                if totalRemoved == k:
-                    break
-        return removeZeros(numClone[:len(numClone) - k + totalRemoved])
+
+        for j in range(k):
+            i = 0
+            while i + 1 < len(num) and num[i] <= num[i + 1]:
+                i += 1
+            # remove the character
+            num = num[:i] + num[i + 1:]
+        return removeZeros(num)
 
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.removeKdigits("1234567890", 9))
+    print(s.removeKdigits("122519", 3))
