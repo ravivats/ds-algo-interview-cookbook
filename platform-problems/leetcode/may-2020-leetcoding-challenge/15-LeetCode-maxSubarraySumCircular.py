@@ -30,6 +30,7 @@ MaxSubArray sum of an array = Kadane's Algorithm
 MaxSubArray sum of a circular array = max(MaxSubArray sum, Sum - MinSubArray sum)  <-- to delete the negative link
 '''
 
+
 class Solution(object):
     def maxSubArraySumCircular(self, A):
         """
@@ -38,7 +39,7 @@ class Solution(object):
         """
         if len(A) == 0:
             return 0
-        
+
         currMax, maxSum, currMin, minSum = A[0], A[0], A[0], A[0]
         sumArr = sum(A)
         for i in range(1, len(A)):
@@ -47,10 +48,10 @@ class Solution(object):
             maxSum = max(maxSum, currMax)
             currMin = min(n, currMin + n)
             minSum = min(minSum, currMin)
-        
+
         print(sumArr, minSum, maxSum)
         # because we have to find the maximum possible sum of a non-empty SubArray of A
         if sumArr == minSum:
             return maxSum
-        
+
         return max(sumArr - minSum, maxSum)
