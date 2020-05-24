@@ -9,7 +9,7 @@ def removeZeros(num):
 
 
 class Solution(object):
-    def removeKdigits(self, num, k):
+    def removeKDigits(self, num, k):
         """
         :type num: str
         :type k: int
@@ -33,4 +33,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.removeKdigits("122519", 3))
+    print(s.removeKDigits("122519", 3))
