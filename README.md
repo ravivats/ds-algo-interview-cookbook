@@ -4,7 +4,7 @@ This repository holds implementation of widely used data structures and algorith
 
 The questions are picked up from various coding platforms, books, actual interviews etc.
 
-- Implementation, solutions have been coded in C++ 17 or Python 3.
+- Implementation, solutions have been coded in C++ 17, Java 11, or Python 3.
 - Basic algorithms can be found inside [algorithms-and-ds](./algorithms-and-ds) folder.
 - Interview questions from coding platforms, books, actual interviews can be found inside [platform-problems](./platform-problems) folder.
 
