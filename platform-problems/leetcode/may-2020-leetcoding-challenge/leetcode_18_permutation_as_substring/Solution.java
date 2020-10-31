@@ -22,7 +22,7 @@ public class Solution {
     }
 
     public boolean checkInclusion(String s1, String s2) {
-        HashMap<Character,Integer> charMap = new HashMap<Character, Integer>();
+        HashMap<Character,Integer> charMap = new HashMap<>();
         for (char c : s1.toCharArray()) {
             if (charMap.containsKey(c)) {
                 int value = charMap.get(c);
@@ -35,7 +35,7 @@ public class Solution {
         char[] arr = s2.toCharArray();
         for (int i = 0; i < arr.length; i++) {
             if (charMap.containsKey(arr[i])) {
-                HashMap<Character, Integer> cloneCharMap = (HashMap)charMap.clone();
+                HashMap<Character, Integer> cloneCharMap = (HashMap<Character,Integer>)charMap.clone();
                 if (checkAllValues(cloneCharMap, arr, i)) {
                     return true;
                 };
